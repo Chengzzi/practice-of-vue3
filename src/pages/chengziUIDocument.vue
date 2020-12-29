@@ -2,20 +2,21 @@
     <div class="chengziUIDoc">
         <!-- <top-nav></top-nav>
         <aside-nav></aside-nav> -->
-        <cz-switch></cz-switch>
+        <cz-draft></cz-draft>
     </div>
 </template>
 
 <script lang="ts">
 import topNav from "./topNav.vue";
 import asideNav from "./asideNav.vue";
-import Switch from "../components/switch.vue";
+import draft from "./draft.vue";
+
 import { provide, ref } from "vue";
 export default {
     components: {
         topNav,
         asideNav,
-        "cz-switch": Switch,
+        "cz-draft": draft,
     },
     name: "chengziUIDoc",
     setup() {
@@ -31,6 +32,5 @@ export default {
 .chengziUIDoc
     width: 100%
     height: 100%
-    padding: 10px
     // background: #eee
 </style>
